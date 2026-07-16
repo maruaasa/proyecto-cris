@@ -1,9 +1,19 @@
-function ServiceCard({titulo, descripcion}){
+import { Link } from "react-router-dom";
+
+
+function ServiceCard({titulo, descripcion, ruta, icono}){
 
 
     return (
 
         <div className="card">
+
+
+            <div className="card-icon">
+
+                {icono}
+
+            </div>
 
 
             <h3>
@@ -16,15 +26,19 @@ function ServiceCard({titulo, descripcion}){
             </p>
 
 
-            <button>
-                Más información
-            </button>
+
+            <Link to={ruta}>
+
+                <button>
+                    Conocer más
+                </button>
+
+            </Link>
 
 
         </div>
 
     );
-
 
 }
 

@@ -3,56 +3,31 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
-
 const app = express();
 
-
-// Permitir conexión con React
 app.use(cors());
-
-
-// Recibir datos JSON
 app.use(express.json());
 
+const connectDatabase = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("Conexión a MongoDB establecida.");
+  } catch (error) {
+    console.error("Error al conectar con MongoDB:");
+    console.error(error.message);
+  }
+};
 
+connectDatabase();
 
-// Conexión MongoDB
-
-mongoose.connect(process.env.MONGO_URI)
-
-.then(() => {
-
-    console.log("MongoDB conectado correctamente");
-
-})
-
-.catch((error) => {
-
-    console.log("Error al conectar MongoDB:", error);
-
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "API operativa."
+  });
 });
 
+const PORT = process.env.PORT || 5000;
 
-
-
-// Ruta de prueba
-
-app.get("/", (req,res)=>{
-
-    res.send("Servidor backend funcionando");
-
-});
-
-
-
-
-// Puerto del servidor
-
-const PORT = 5000;
-
-
-app.listen(PORT,()=>{
-
-    console.log(`Servidor iniciado en puerto ${PORT}`);
-
+app.listen(PORT, () => {
+  console.log(`Servidor iniciado en el puerto ${PORT}`);
 });

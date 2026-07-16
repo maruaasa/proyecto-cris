@@ -7,42 +7,75 @@ import Home from "./pages/Home";
 import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
 
+import FraudesBancarios from "./pages/servicios/FraudesBancarios";
+import FraudesDigitales from "./pages/servicios/FraudesDigitales";
+import RoboIdentidad from "./pages/servicios/RoboIdentidad";
+import EstafasInversion from "./pages/servicios/EstafasInversion";
+import EstafasRomanticas from "./pages/servicios/EstafasRomanticas";
+import EstafasPiramidales from "./pages/servicios/EstafasPiramidales";
 
-function App(){
+function App() {
 
-  return (
+    return (
 
-    <BrowserRouter>
+        <BrowserRouter>
 
-      <Navbar />
+    
+            <Routes>
 
-      <Routes>
+                <Route
+                    path="/"
+                    element={<Home />}
+                />
 
-        <Route 
-          path="/" 
-          element={<Home />}
-        />
+                <Route
+                    path="/servicios"
+                    element={<Servicios />}
+                />
 
-        <Route 
-          path="/servicios" 
-          element={<Servicios />}
-        />
+                <Route
+                    path="/servicios/fraudes-bancarios"
+                    element={<FraudesBancarios />}
+                />
 
-        <Route 
-          path="/contacto" 
-          element={<Contacto />}
-        />
+                <Route
+                    path="/servicios/fraudes-digitales"
+                    element={<FraudesDigitales />}
+                />
 
-      </Routes>
+                <Route
+                    path="/servicios/robo-identidad"
+                    element={<RoboIdentidad />}
+                />
 
+                <Route
+                    path="/servicios/estafas-inversion"
+                    element={<EstafasInversion />}
+                />
 
-      <Footer />
+                <Route
+                    path="/servicios/estafas-romanticas"
+                    element={<EstafasRomanticas />}
+                />
 
-    </BrowserRouter>
+                <Route
+                    path="/servicios/estafas-piramidales"
+                    element={<EstafasPiramidales />}
+                />
 
-  );
+                <Route
+                    path="/contacto"
+                    element={<Contacto />}
+                />
+
+            </Routes>
+
+            <Footer />
+
+        </BrowserRouter>
+
+    );
 
 }
-
 
 export default App;

@@ -1,25 +1,64 @@
-function Contacto() {
+function Contacto(){
 
-    return (
+
+    return(
+
 
         <section className="contact">
 
-            <h1>
-                Contacto
-            </h1>
+
+            <div className="contact-info">
+
+
+                <h1>
+                    Contacto
+                </h1>
+
+
+                <h2>
+                    Grupo de Recuperación
+                </h2>
+
+
+                <p>
+                    Atención especializada en casos financieros
+                    y digitales.
+                </p>
+
+
+                <p>
+                    WhatsApp:
+                </p>
+
+
+                <button>
+                    Contactar por WhatsApp
+                </button>
+
+
+                <p>
+                    Correo:
+                    contacto@grupo-recuperacion.com
+                </p>
+
+
+            </div>
+
+
 
 
             <form>
 
+
                 <input
                     type="text"
-                    placeholder="Nombre"
+                    placeholder="Nombre completo"
                 />
 
 
                 <input
                     type="email"
-                    placeholder="Correo"
+                    placeholder="Correo electrónico"
                 />
 
 
@@ -29,26 +68,43 @@ function Contacto() {
                 />
 
 
+
                 <select>
 
-                    <option>
-                        Selecciona un servicio
-                    </option>
 
                     <option>
-                        Servicio 1
+                        Tipo de problema
                     </option>
 
+
                     <option>
-                        Servicio 2
+                        Fraude bancario
                     </option>
+
+
+                    <option>
+                        Fraude digital
+                    </option>
+
+
+                    <option>
+                        Robo de identidad
+                    </option>
+
+
+                    <option>
+                        Estafa de inversión
+                    </option>
+
 
                 </select>
+
 
 
                 <textarea
                     placeholder="Mensaje"
                 />
+
 
 
                 <button>
@@ -58,9 +114,13 @@ function Contacto() {
 
             </form>
 
+
+
         </section>
 
+
     );
+
 
 }
 
