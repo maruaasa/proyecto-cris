@@ -65,18 +65,11 @@ HEADER / NAVBAR
 
     position: absolute;
 
-    top: 30px;
+    top: 25px;
 
-    left: 2%;
-    right: 8%;
+    left: 1%;
 
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    z-index: 100;
+    right: 5%;
 
 }
 
@@ -99,15 +92,15 @@ HEADER / NAVBAR
 
     align-items:center;
 
-    gap:15px;
+    gap:8px;
 
 }
 
 .hero-logo img {
 
-    width:120%;
+    width:150%;
 
-    height:120px;
+    height:150px;
 
     display:block;
 
