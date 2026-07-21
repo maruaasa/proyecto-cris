@@ -61,15 +61,23 @@ VARIABLES DE COLOR
 HEADER / NAVBAR
 =========================================*/
 
-.hero-navbar {
+ .hero-navbar {
 
-    position: absolute;
+    position:absolute;
 
-    top: 25px;
+    top:30px;
 
-    left: 1%;
+    left:3%;
 
-    right: 5%;
+    right:3%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:100;
 
 }
 
@@ -82,7 +90,7 @@ HEADER / NAVBAR
 
     align-items: center;
 
-    gap: 15px;
+    gap: 10px;
 
 }
 
@@ -96,11 +104,11 @@ HEADER / NAVBAR
 
 }
 
-.hero-logo img {
+.hero-logo img{
 
-    width:150%;
+    width:110px;
 
-    height:150px;
+    height:110px;
 
     display:block;
 
@@ -2169,7 +2177,25 @@ TABLET
 
     }
 
+.phone-row{
 
+    display:flex;
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+
+.phone-row select,
+.phone-row input{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
 
     /*==============================
     PROCESO TIMELINE
@@ -2369,7 +2395,6 @@ MÓVIL PEQUEÑO
 
     flex-direction:column;
 
-    gap:20px;
 
 }
 
