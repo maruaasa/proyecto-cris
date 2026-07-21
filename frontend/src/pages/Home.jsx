@@ -9,6 +9,9 @@ import Testimonios from "../components/Testimonios";
 import FAQ from "../components/FAQ";
 import { FaWhatsapp } from "react-icons/fa";
 
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 
 function Home() {
 
@@ -96,18 +99,16 @@ function Home() {
                         <input type="email" placeholder="Correo electrónico"/>
                     </div>
 
-                  <div className="phone-row">
+                 <div className="phone-row">
 
-   <div className="input-group phone-input">
-
-    <FaPhoneAlt />
-
-    <input 
-        type="tel" 
+    <PhoneInput
+        country={"mx"}
+        enableSearch={true}
+        searchPlaceholder="Buscar país"
         placeholder="Número telefónico"
     />
 
-</div>
+
 
 </div>
 
