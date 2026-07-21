@@ -1976,11 +1976,13 @@ RESPONSIVE
     }
 
 
-    .hero-text {
+    .hero-text{
 
-        text-align:center;
+    width:100%;
 
-    }
+    text-align:center;
+
+     }
 
 
     .hero-text p {
@@ -1999,13 +2001,17 @@ RESPONSIVE
     }
 
 
-    .contact-form {
+   .contact-form{
 
-        max-width:600px;
+    width:100%;
 
-        margin:0 auto;
+    max-width:360px;
 
-    }
+    margin:auto;
+
+    box-sizing:border-box;
+
+}
 
 
 
@@ -2087,20 +2093,29 @@ TABLET
 
     .hero {
 
-        padding-left:25px;
+    display:flex;
 
-        padding-right:25px;
+    flex-direction:column;
 
+    padding:140px 25px 60px;
+
+    gap:40px;
+
+    text-align:center;
+
+    }
     }
 
 
 
-    .hero-title {
+    
+.hero-title{
 
-        font-size:34px;
+    font-size:32px;
 
-    }
+    line-height:1.2;
 
+}
 
     .hero-subtitle {
 
@@ -2252,7 +2267,7 @@ TABLET
     }
 
 
-}
+
 
 
 /*=========================================
