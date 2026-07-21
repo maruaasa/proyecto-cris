@@ -2309,13 +2309,20 @@ TABLET
 
 
 
-    .phone-row {
+    .phone-row{
 
-        grid-template-columns:1fr;
+    width:100%;
 
-    }
+}
 
 
+.phone-row .form-control{
+
+    width:100% !important;
+
+    height:55px;
+
+}
 
 
 
