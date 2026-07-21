@@ -2196,7 +2196,29 @@ TABLET
     box-sizing:border-box;
 
 }
+/* TELEFONO INTERNACIONAL MOVIL */
 
+.phone-row{
+
+    width:100%;
+
+}
+
+
+.phone-row .react-international-phone{
+
+    width:100%;
+
+}
+
+
+.phone-row input{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
     /*==============================
     PROCESO TIMELINE
     ==============================*/
