@@ -8,8 +8,7 @@ import Beneficios from "../components/Beneficios";
 import Testimonios from "../components/Testimonios";
 import FAQ from "../components/FAQ";
 import { FaWhatsapp } from "react-icons/fa";
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
+
 
 function Home() {
 
@@ -99,18 +98,16 @@ function Home() {
 
                   <div className="phone-row">
 
-    <PhoneInput
+   <div className="input-group phone-input">
 
-       
-    type="tel"
-    placeholder="Número telefónico"
+    <FaPhoneAlt />
 
-
-        searchPlaceholder="Buscar país"
-
+    <input 
+        type="tel" 
         placeholder="Número telefónico"
-
     />
+
+</div>
 
 </div>
 
