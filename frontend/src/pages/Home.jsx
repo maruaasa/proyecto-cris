@@ -9,7 +9,11 @@ import Testimonios from "../components/Testimonios";
 import FAQ from "../components/FAQ";
 import { FaWhatsapp } from "react-icons/fa";
 
+import {
+    PhoneInput
+} from 'react-international-phone';
 
+import 'react-international-phone/style.css';
 
 
 function Home() {
@@ -99,16 +103,12 @@ function Home() {
                     </div>
 
                 <div className="phone-row">
-    <select>
-        <option>+52</option>
-        <option>+1</option>
-        <option>+57</option>
-    </select>
 
-    <div className="input-group phone-input">
-        <FaPhoneAlt />
-        <input type="tel" placeholder="Número telefónico"/>
-    </div>
+    <PhoneInput
+        defaultCountry="mx"
+    />
+
+
 </div>
 
                     <div className="input-group">
