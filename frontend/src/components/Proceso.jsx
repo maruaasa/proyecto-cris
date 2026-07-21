@@ -1,75 +1,106 @@
-function Proceso(){
+function Proceso() {
 
     const pasos = [
 
         {
-            numero:"01",
-            titulo:"Cuéntanos tu caso",
-            texto:"Analizamos la información inicial proporcionada para conocer los detalles de la situación."
+            numero: "01",
+            titulo: "Cuéntanos tu caso",
+            texto: "Analizamos la información inicial y los detalles de la situación para comprender el problema y definir el camino adecuado."
         },
 
         {
-            numero:"02",
-            titulo:"Evaluamos la situación",
-            texto:"Revisamos los datos disponibles, documentos y características del posible fraude."
+            numero: "02",
+            titulo: "Evaluamos la situación",
+            texto: "Revisamos documentos, movimientos, evidencias disponibles y todos los elementos necesarios para realizar un análisis completo."
         },
 
         {
-            numero:"03",
-            titulo:"Definimos una estrategia",
-            texto:"Te orientamos sobre las acciones recomendadas y los siguientes pasos a realizar."
+            numero: "03",
+            titulo: "Definimos una estrategia",
+            texto: "Explicamos las acciones recomendadas y establecemos una estrategia personalizada según las características del caso."
         },
 
         {
-            numero:"04",
-            titulo:"Damos seguimiento",
-            texto:"Acompañamos el proceso brindando orientación durante las diferentes etapas."
+            numero: "04",
+            titulo: "Damos seguimiento",
+            texto: "Acompañamos todo el proceso brindando orientación constante y resolviendo cada una de tus dudas."
         }
 
     ];
 
 
-    return(
+    return (
 
         <section className="proceso">
 
-            <h2>
-                ¿Cómo funciona nuestro proceso?
-            </h2>
+
+            <div className="proceso-header">
+
+                <h2>
+                    ¿Cómo funciona nuestro proceso?
+                </h2>
+
+                <p>
+                    Nuestro método de trabajo está diseñado para ofrecer
+                    una atención clara, profesional y personalizada.
+                </p>
+
+            </div>
 
 
-            <div className="proceso-grid">
+
+            <div className="timeline">
+
 
                 {
-                    pasos.map((paso,index)=>(
+                    pasos.map((paso, index)=>(
 
                         <div 
-                            className="paso"
+                            className="timeline-item"
                             key={index}
                         >
 
-                            <span>
 
-                                {paso.numero}
-
-                            </span>
+                            <div className="timeline-left">
 
 
-                            <h3>
+                                <div className="timeline-circle">
 
-                                {paso.titulo}
+                                    {paso.numero}
 
-                            </h3>
+                                </div>
 
 
-                            <p>
+                                {
+                                    index !== pasos.length - 1 &&
 
-                                {paso.texto}
+                                    <div className="timeline-line"></div>
 
-                            </p>
+                                }
+
+
+                            </div>
+
+
+
+                            <div className="timeline-card">
+
+
+                                <h3>
+                                    {paso.titulo}
+                                </h3>
+
+
+                                <p>
+                                    {paso.texto}
+                                </p>
+
+
+                            </div>
 
 
                         </div>
+
 
                     ))
                 }

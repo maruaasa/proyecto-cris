@@ -1140,118 +1140,181 @@ DETALLE SUPERIOR TARJETA
     background: var(--light-green);
 
 }
-/*=========================================
+/*==================================================
 PROCESO
-=========================================*/
+==================================================*/
 
-.proceso {
+.proceso{
 
-    padding: 120px 8%;
+    padding:120px 8%;
 
-    background: #f7f9fc;
-
-}
-.proceso > h2 {
-
-    text-align: center;
-
-    font-size: clamp(32px, 5vw, 48px);
-
-    color: var(--primary-blue);
-
-    margin-bottom: 70px;
+    background:#f7f9fc;
 
 }
-/* GRID DE PASOS */
 
-.proceso-grid {
 
-    max-width: 1200px;
+.proceso-header{
 
-    margin: 0 auto;
+    max-width:750px;
 
-    display: grid;
+    margin:0 auto 90px;
 
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 30px;
+    text-align:center;
 
 }
-/* TARJETAS */
 
-.paso {
+.proceso-header h2{
 
-    background: var(--white);
+    font-size:46px;
 
-    border-radius: 20px;
+    color:#0B2340;
 
-    padding: 40px 30px;
+    margin-bottom:20px;
 
-    text-align: center;
-
-    box-shadow: 0 15px 35px rgba(0,0,0,.08);
-
-    transition: .35s ease;
-
-    position: relative;
-
-    border-top: 5px solid var(--light-green);
+    font-weight:700;
 
 }
-.paso:hover {
 
-    transform: translateY(-10px);
 
-    box-shadow: 0 25px 45px rgba(0,0,0,.14);
+.proceso-header p{
 
-}
-/* NUMERO */
+    font-size:18px;
 
-.paso span {
+    color:#666;
 
-    width: 65px;
-
-    height: 65px;
-
-    margin: 0 auto 25px;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    background: var(--light-green);
-
-    color: var(--white);
-
-    font-size: 22px;
-
-    font-weight: 700;
+    line-height:1.8;
 
 }
-/* TITULO */
 
-.paso h3 {
 
-    color: var(--primary-blue);
 
-    font-size: 23px;
+.timeline{
 
-    margin-bottom: 18px;
+    max-width:900px;
+
+    margin:auto;
 
 }
-/* TEXTO */
 
-.paso p {
 
-    color: var(--text-light);
 
-    line-height: 1.8;
+.timeline-item{
 
-    font-size: 16px;
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+}
+
+
+
+.timeline-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.timeline-circle{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#31B35A;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+.timeline-line{
+
+    width:2px;
+
+    height:140px;
+
+    background:#0B2340;
+
+}
+
+
+
+.timeline-card{
+
+    background:white;
+
+    flex:1;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    margin-bottom:55px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.07);
+
+    transition:.3s ease;
+
+}
+
+
+
+.timeline-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+
+
+.timeline-card h3{
+
+    color:#0B2340;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.timeline-card p{
+
+    color:#666;
+
+    font-size:16px;
+
+    line-height:1.8;
 
 }
 /*=========================================
@@ -1907,41 +1970,40 @@ RESPONSIVE
 
     .hero {
 
-        grid-template-columns: 1fr;
 
-        padding-top: 140px;
+        padding-top:140px;
 
     }
 
 
     .hero-text {
 
-        text-align: center;
+        text-align:center;
 
     }
 
 
     .hero-text p {
 
-        margin-left: auto;
+        margin-left:auto;
 
-        margin-right: auto;
+        margin-right:auto;
 
     }
 
 
     .hero-info {
 
-        justify-content: center;
+        justify-content:center;
 
     }
 
 
     .contact-form {
 
-        max-width: 600px;
+        max-width:600px;
 
-        margin: 0 auto;
+        margin:0 auto;
 
     }
 
@@ -1949,28 +2011,28 @@ RESPONSIVE
 
     .servicios-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
 
     }
 
 
     .proceso-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:1fr;
 
     }
 
 
     .estadisticas {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
 
     }
 
 
     .ventajas-grid {
 
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
 
     }
 
@@ -2075,6 +2137,74 @@ TABLET
 
 
 
+    /*==============================
+    PROCESO TIMELINE
+    ==============================*/
+
+
+    .proceso{
+
+        padding:80px 5%;
+
+    }
+
+
+    .proceso-header h2{
+
+        font-size:34px;
+
+    }
+
+
+    .proceso-header p{
+
+        font-size:16px;
+
+    }
+
+
+    .timeline-item{
+
+        gap:20px;
+
+    }
+
+
+    .timeline-circle{
+
+        width:55px;
+
+        height:55px;
+
+        font-size:17px;
+
+    }
+
+
+    .timeline-line{
+
+        height:110px;
+
+    }
+
+
+    .timeline-card{
+
+        padding:25px;
+
+        margin-bottom:40px;
+
+    }
+
+
+    .timeline-card h3{
+
+        font-size:21px;
+
+    }
+
+
+
     .estadisticas {
 
         grid-template-columns:1fr;
@@ -2123,7 +2253,6 @@ TABLET
 
 
 }
-
 
 
 /*=========================================
