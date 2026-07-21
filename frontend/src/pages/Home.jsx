@@ -101,9 +101,10 @@ function Home() {
 
     <PhoneInput
 
-        country={'mx'}
+       
+    type="tel"
+    placeholder="Número telefónico"
 
-        enableSearch={true}
 
         searchPlaceholder="Buscar país"
 
