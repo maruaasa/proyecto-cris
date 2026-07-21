@@ -43,6 +43,12 @@ function Home() {
         <a href="/contacto">Contacto</a>
 
     </nav>
+    <a 
+    href="tel:+5663820152" 
+    className="call-button"
+>
+    consulta
+</a>
 
 </header>
 
