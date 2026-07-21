@@ -113,7 +113,7 @@ function Home() {
 
                     <div className="input-group">
                         <FaDollarSign />
-                        <input type="number"placeholder="Monto aproximado perdido(USD)"/>
+                        <input type="number"placeholder="Monto aproximado (USD)"/>
                     </div>
 
                     <details className="comments-box">
