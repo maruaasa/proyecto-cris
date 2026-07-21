@@ -1,34 +1,33 @@
+import { FaFileAlt, FaSearch, FaBullseye, FaHandshake } from "react-icons/fa";
 function Proceso() {
 
     const pasos = [
 
-        {
-            numero: "01",
-            titulo: "Cuéntanos tu caso",
-            texto: "Analizamos la información inicial y los detalles de la situación para comprender el problema y definir el camino adecuado."
-        },
+    {
+        icono: <FaFileAlt />,
+        titulo: "Cuéntanos tu caso",
+        texto: "Analizamos la información inicial y los detalles de la situación para comprender el problema y definir el camino adecuado."
+    },
 
-        {
-            numero: "02",
-            titulo: "Evaluamos la situación",
-            texto: "Revisamos documentos, movimientos, evidencias disponibles y todos los elementos necesarios para realizar un análisis completo."
-        },
+    {
+        icono: <FaSearch />,
+        titulo: "Evaluamos la situación",
+        texto: "Revisamos documentos, movimientos, evidencias disponibles y todos los elementos necesarios para realizar un análisis completo."
+    },
 
-        {
-            numero: "03",
-            titulo: "Definimos una estrategia",
-            texto: "Explicamos las acciones recomendadas y establecemos una estrategia personalizada según las características del caso."
-        },
+    {
+        icono: <FaBullseye />,
+        titulo: "Definimos una estrategia",
+        texto: "Explicamos las acciones recomendadas y establecemos una estrategia personalizada según las características del caso."
+    },
 
-        {
-            numero: "04",
-            titulo: "Damos seguimiento",
-            texto: "Acompañamos todo el proceso brindando orientación constante y resolviendo cada una de tus dudas."
-        }
+    {
+        icono: <FaHandshake />,
+        titulo: "Damos seguimiento",
+        texto: "Acompañamos todo el proceso brindando orientación constante y resolviendo cada una de tus dudas."
+    }
 
-    ];
-
-
+];
     return (
 
         <section className="proceso">
@@ -66,7 +65,7 @@ function Proceso() {
 
                                 <div className="timeline-circle">
 
-                                    {paso.numero}
+                                    {paso.icono}
 
                                 </div>
 

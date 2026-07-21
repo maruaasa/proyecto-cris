@@ -2460,4 +2460,20 @@ MÓVIL PEQUEÑO
     transform:translateY(-2px);
 
 }
+.timeline-circle svg{
+
+    color:#1f7a3d;
+
+    font-size:28px;
+
+}
+.timeline-circle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
 }
