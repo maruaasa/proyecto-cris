@@ -13,17 +13,24 @@ function Navbar(){
 
                 <div className="logo-image">
 
+                    <img 
+                        src="/images/logo.jpg"
+                        alt="Logo SSM"
+                    />
+
                 </div>
 
 
                 <div className="logo">
 
-                    Grupo de Recuperación
+                    SSM | Asesoria Legal y Recuperacion Patrimonial
 
                 </div>
 
 
             </div>
+
+
 
 
 
@@ -35,8 +42,18 @@ function Navbar(){
                 </Link>
 
 
+                <Link to="/nosotros">
+                    Nosotros
+                </Link>
+
+
                 <Link to="/servicios">
                     Servicios
+                </Link>
+
+
+                <Link to="/preguntas-frecuentes">
+                    Preguntas Frecuentes
                 </Link>
 
 
@@ -50,6 +67,8 @@ function Navbar(){
 
 
 
+
+
             <div className="navbar-action">
 
 
@@ -58,12 +77,14 @@ function Navbar(){
                     className="call-button"
                 >
 
-                    Llamar ahora
+                    Consulta
 
                 </a>
 
 
             </div>
+
+
 
 
         </header>

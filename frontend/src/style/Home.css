@@ -35,14 +35,13 @@ button {
     font-family: inherit;
 }
 
-
 /*=========================================
 VARIABLES DE COLOR
 =========================================*/
 
 :root {
 
-    --primary-blue: #0B2340;
+    --primary-green: #41965d;
     --primary-green: #1F6B3A;
     --light-green: #31B35A;
 
@@ -55,7 +54,6 @@ VARIABLES DE COLOR
     --shadow: 0 8px 25px rgba(0,0,0,.12);
 
 }
-
 
 /*=========================================
 HEADER / NAVBAR
@@ -80,7 +78,6 @@ HEADER / NAVBAR
     z-index:100;
 
 }
-
 
 /* LOGO */
 
@@ -129,10 +126,9 @@ HEADER / NAVBAR
 
 }
 
-
 .hero-navbar nav a {
 
-    color: var(--primary-green);
+    color: var(--primary-blue);
 
     font-size: 18px;
 
@@ -142,13 +138,11 @@ HEADER / NAVBAR
 
 }
 
+.hero-navbar nav a:not(.btn-consulta) {
 
-.hero-navbar nav a:hover {
-
-    color: var(--light-green);
+    color: rgba(0, 120, 80, 0.85);
 
 }
-
 
 /*=========================================
 HEADER FIJO
@@ -182,7 +176,6 @@ HEADER FIJO
 
 }
 
-
 /* MARCA */
 
 .navbar-brand {
@@ -194,7 +187,6 @@ HEADER FIJO
     gap: 15px;
 
 }
-
 
 .logo-image {
 
@@ -210,7 +202,6 @@ HEADER FIJO
 
 }
 
-
 .logo {
 
     color: var(--white);
@@ -223,21 +214,17 @@ HEADER FIJO
 /*=========================================
 NAVBAR LINKS
 =========================================*/
-
 .navbar-links {
 
     display: flex;
 
     align-items: center;
 
-    gap: 45px;
-
+    gap: 35px;
 }
+.navbar-links a:not(.btn-consulta) {
 
-
-.navbar-links a {
-
-    color: var(--white);
+    color: rgba(0, 120, 80, 0.85);
 
     font-size: 17px;
 
@@ -246,15 +233,128 @@ NAVBAR LINKS
     transition: .3s ease;
 
 }
+.navbar-links a:not(.btn-consulta):hover {
 
+    color: #00a86b;
 
-.navbar-links a:hover {
+}
+.btn-consulta {
 
-    color: var(--light-green);
+    background: #008060;
+
+    color: white !important;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    margin-left: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    font-weight: 700;
 
 }
 
+/* BOTON CONSULTA */
 
+.navbar-links .btn-consulta {
+
+    background: rgba(0, 120, 80, 0.85);
+
+    color: var(--white);
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    margin-left: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;/*=========================================
+NAVBAR LINKS
+=========================================*/
+
+.navbar-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+/* LINKS PRINCIPALES */
+
+.navbar-links a {
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+
+}
+
+.navbar-links a:hover {
+
+    color: var(--light-blue);
+
+}
+
+/* BOTON CONSULTA */
+
+.navbar-links .btn-consulta {
+
+    background: rgba(0, 120, 80, 0.85);
+
+    color: var(--white);
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    margin-left: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+.navbar-links .btn-consulta:hover {
+
+    background: var(--blue);
+
+    color: var(--white);
+
+}
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+.navbar-links .btn-consulta:hover {
+
+    background: var(--green);
+
+    color: var(--white);
+
+}
 /*=========================================
 BOTÓN PRINCIPAL
 =========================================*/
@@ -266,7 +366,6 @@ BOTÓN PRINCIPAL
     align-items: center;
 
 }
-
 
 .call-button {
 
@@ -284,13 +383,11 @@ BOTÓN PRINCIPAL
 
 }
 
-
 .call-button:hover {
 
     background: #2e9a45;
 
 }
-
 
 /*=========================================
 HERO
@@ -314,7 +411,6 @@ HERO
 
 }
 
-
 /* TEXTO HERO */
 
 .hero-text {
@@ -322,7 +418,6 @@ HERO
     animation: fadeLeft .8s ease;
 
 }
-
 
 .hero-title {
 
@@ -338,7 +433,6 @@ HERO
 
 }
 
-
 .hero-subtitle {
 
     font-size: clamp(22px, 3vw, 28px);
@@ -350,7 +444,6 @@ HERO
     margin-bottom: 25px;
 
 }
-
 
 .hero-text p {
 
@@ -366,7 +459,6 @@ HERO
 
 }
 
-
 .hero-free {
 
     font-size: 28px;
@@ -378,7 +470,6 @@ HERO
     margin-bottom: 35px;
 
 }
-
 
 /*=========================================
 ESTADÍSTICAS HERO
@@ -393,7 +484,6 @@ ESTADÍSTICAS HERO
     gap: 25px;
 
 }
-
 
 .stat-card {
 
@@ -410,7 +500,6 @@ ESTADÍSTICAS HERO
     border: 2px solid #E8EFE9;
 
 }
-
 
 /* Mantener compatibilidad */
 
@@ -431,7 +520,6 @@ ESTADÍSTICAS HERO
 
 }
 
-
 .rating-card h4,
 .money-card h4,
 .stat-card h4 {
@@ -444,7 +532,6 @@ ESTADÍSTICAS HERO
 
 }
 
-
 .rating-card p,
 .money-card p,
 .stat-card p {
@@ -454,7 +541,6 @@ ESTADÍSTICAS HERO
     line-height: 1.6;
 
 }
-
 
 /* ESTRELLAS */
 
@@ -470,14 +556,13 @@ ESTADÍSTICAS HERO
 
 }
 
-
 /* ICONO DINERO */
 
 .money-icon {
 
     color: var(--light-green);
 
-    font-size: 55px;
+    font-size: 30px;
 
 }
 /*=========================================
@@ -498,21 +583,19 @@ FORMULARIO DE CONTACTO
 
 }
 
-
 /* TITULO */
 
 .contact-form h2 {
 
     text-align: center;
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     font-size: clamp(26px, 3vw, 34px);
 
     margin-bottom: 12px;
 
 }
-
 
 .contact-form > p {
 
@@ -525,7 +608,6 @@ FORMULARIO DE CONTACTO
     margin-bottom: 30px;
 
 }
-
 
 /* CAMPOS */
 
@@ -551,7 +633,6 @@ FORMULARIO DE CONTACTO
 
 }
 
-
 .input-group:focus-within {
 
     border-color: var(--light-green);
@@ -559,7 +640,6 @@ FORMULARIO DE CONTACTO
     box-shadow: 0 0 0 3px rgba(49,179,90,.12);
 
 }
-
 
 .input-group svg {
 
@@ -570,7 +650,6 @@ FORMULARIO DE CONTACTO
     min-width:24px;
 
 }
-
 
 .input-group input {
 
@@ -588,7 +667,6 @@ FORMULARIO DE CONTACTO
 
 }
 
-
 /* TELEFONO */
 
 .phone-row {
@@ -602,7 +680,6 @@ FORMULARIO DE CONTACTO
     margin-bottom: 18px;
 
 }
-
 
 .phone-row select {
 
@@ -618,7 +695,6 @@ FORMULARIO DE CONTACTO
 
 }
 
-
 /* COMENTARIOS */
 
 .comments-box {
@@ -626,7 +702,6 @@ FORMULARIO DE CONTACTO
     margin-bottom: 25px;
 
 }
-
 
 .comments-box summary {
 
@@ -639,7 +714,6 @@ FORMULARIO DE CONTACTO
     margin-bottom: 12px;
 
 }
-
 
 .comments-box textarea {
 
@@ -663,13 +737,11 @@ FORMULARIO DE CONTACTO
 
 }
 
-
 .comments-box textarea:focus {
 
     border-color: var(--light-green);
 
 }
-
 
 /* BOTÓN ENVÍO */
 
@@ -692,7 +764,6 @@ FORMULARIO DE CONTACTO
     transition: .3s ease;
 
 }
-
 
 .contact-form button:hover {
 
@@ -721,7 +792,6 @@ SEGURIDAD FORMULARIO
 
 }
 
-
 /*=========================================
 ANIMACIONES
 =========================================*/
@@ -746,7 +816,6 @@ ANIMACIONES
 
 }
 
-
 /*=========================================
 SOBRE NOSOTROS
 =========================================*/
@@ -759,7 +828,6 @@ SOBRE NOSOTROS
 
 }
 
-
 .about-container {
 
     max-width: 1200px;
@@ -767,7 +835,6 @@ SOBRE NOSOTROS
     margin: 0 auto;
 
 }
-
 
 .about-header {
 
@@ -777,17 +844,15 @@ SOBRE NOSOTROS
 
 }
 
-
 .about-header h2 {
 
     font-size: clamp(32px, 5vw, 48px);
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     margin-bottom: 20px;
 
 }
-
 
 .about-header p {
 
@@ -803,7 +868,6 @@ SOBRE NOSOTROS
 
 }
 
-
 .about-grid {
 
     display: grid;
@@ -813,7 +877,6 @@ SOBRE NOSOTROS
     gap: 35px;
 
 }
-
 
 .about-card {
 
@@ -831,7 +894,6 @@ SOBRE NOSOTROS
 
 }
 
-
 .about-card:hover {
 
     transform: translateY(-12px);
@@ -840,17 +902,15 @@ SOBRE NOSOTROS
 
 }
 
-
 .about-card h3 {
 
     font-size: 24px;
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     margin-bottom: 20px;
 
 }
-
 
 .about-card p {
 
@@ -859,7 +919,6 @@ SOBRE NOSOTROS
     line-height: 1.9;
 
 }
-
 
 /* ICONOS SOBRE NOSOTROS */
 
@@ -885,13 +944,11 @@ SOBRE NOSOTROS
 
 }
 
+.about-green {
 
-.about-blue {
-
-    background: #1976D2;
+    background: #5c9355;
 
 }
-
 
 .about-green {
 
@@ -899,14 +956,11 @@ SOBRE NOSOTROS
 
 }
 
-
 .about-orange {
 
     background: #F57C00;
 
 }
-
-
 
 /*=========================================
 SERVICIOS
@@ -920,7 +974,6 @@ SERVICIOS
 
 }
 
-
 .servicios-header {
 
     text-align: center;
@@ -929,17 +982,15 @@ SERVICIOS
 
 }
 
-
 .servicios-header h2 {
 
     font-size: clamp(32px,5vw,48px);
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     margin-bottom: 20px;
 
 }
-
 
 .servicios-header p {
 
@@ -955,7 +1006,6 @@ SERVICIOS
 
 }
 
-
 .servicios-grid {
 
     display: grid;
@@ -965,7 +1015,6 @@ SERVICIOS
     gap: 35px;
 
 }
-
 
 /* TARJETAS SERVICIOS */
 
@@ -988,7 +1037,6 @@ SERVICIOS
     overflow: hidden;
 
 }
-
 
 .servicio-card:hover {
 
@@ -1023,17 +1071,15 @@ ICONOS SERVICIOS
 
 }
 
-
 /*=========================================
 COLORES ICONOS
 =========================================*/
 
-.icon-blue {
+.icon-green {
 
-    background: #1565C0;
+    background: #276a21;
 
 }
-
 
 .icon-green {
 
@@ -1041,13 +1087,11 @@ COLORES ICONOS
 
 }
 
-
 .icon-red {
 
     background: #C62828;
 
 }
-
 
 .icon-orange {
 
@@ -1055,20 +1099,17 @@ COLORES ICONOS
 
 }
 
-
 .icon-purple {
 
     background: #7B1FA2;
 
 }
 
-
 .icon-gray {
 
     background: #455A64;
 
 }
-
 
 /*=========================================
 CONTENIDO SERVICIOS
@@ -1078,12 +1119,11 @@ CONTENIDO SERVICIOS
 
     font-size: 26px;
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     margin-bottom: 18px;
 
 }
-
 
 .servicio-card p {
 
@@ -1095,7 +1135,6 @@ CONTENIDO SERVICIOS
 
 }
 
-
 /*=========================================
 BOTÓN SERVICIOS
 =========================================*/
@@ -1106,7 +1145,7 @@ BOTÓN SERVICIOS
 
     padding: 14px 24px;
 
-    background: var(--primary-blue);
+    background: var(--primary-green);
 
     color: var(--white);
 
@@ -1155,7 +1194,6 @@ PROCESO
 
 }
 
-
 .proceso-header{
 
     max-width:750px;
@@ -1178,7 +1216,6 @@ PROCESO
 
 }
 
-
 .proceso-header p{
 
     font-size:18px;
@@ -1189,8 +1226,6 @@ PROCESO
 
 }
 
-
-
 .timeline{
 
     max-width:900px;
@@ -1198,8 +1233,6 @@ PROCESO
     margin:auto;
 
 }
-
-
 
 .timeline-item{
 
@@ -1211,8 +1244,6 @@ PROCESO
 
 }
 
-
-
 .timeline-left{
 
     display:flex;
@@ -1222,8 +1253,6 @@ PROCESO
     align-items:center;
 
 }
-
-
 
 .timeline-circle{
 
@@ -1255,8 +1284,6 @@ PROCESO
 
 }
 
-
-
 .timeline-line{
 
     width:2px;
@@ -1266,8 +1293,6 @@ PROCESO
     background:#0B2340;
 
 }
-
-
 
 .timeline-card{
 
@@ -1287,8 +1312,6 @@ PROCESO
 
 }
 
-
-
 .timeline-card:hover{
 
     transform:translateY(-5px);
@@ -1296,8 +1319,6 @@ PROCESO
     box-shadow:0 20px 45px rgba(0,0,0,.12);
 
 }
-
-
 
 .timeline-card h3{
 
@@ -1308,8 +1329,6 @@ PROCESO
     margin-bottom:15px;
 
 }
-
-
 
 .timeline-card p{
 
@@ -1345,7 +1364,7 @@ POR QUÉ ELEGIRNOS
 
     font-size: clamp(32px, 5vw, 48px);
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     margin-bottom: 20px;
 
@@ -1392,7 +1411,6 @@ ESTADÍSTICAS
 
 }
 
-
 .estadistica:hover {
 
     transform: translateY(-8px);
@@ -1402,7 +1420,7 @@ ESTADÍSTICAS
 }
 .estadistica h3 {
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     font-size: 42px;
 
@@ -1435,7 +1453,6 @@ VENTAJAS
 
 }
 
-
 .ventaja-card {
 
     background: var(--white);
@@ -1452,7 +1469,6 @@ VENTAJAS
 
 }
 
-
 .ventaja-card:hover {
 
     transform: translateY(-10px);
@@ -1461,17 +1477,15 @@ VENTAJAS
 
 }
 
-
 .ventaja-card h3 {
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     font-size: 22px;
 
     margin-bottom: 18px;
 
 }
-
 
 .ventaja-card p {
 
@@ -1492,7 +1506,6 @@ BENEFICIOS
 
 }
 
-
 /* ENCABEZADO */
 
 .beneficios-header {
@@ -1505,17 +1518,15 @@ BENEFICIOS
 
 }
 
-
 .beneficios-header h2 {
 
     font-size: clamp(32px, 5vw, 48px);
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     margin-bottom: 20px;
 
 }
-
 
 .beneficios-header p {
 
@@ -1562,7 +1573,6 @@ BENEFICIOS
 
 }
 
-
 .beneficio-card:hover {
 
     transform: translateY(-10px);
@@ -1571,17 +1581,15 @@ BENEFICIOS
 
 }
 
-
 .beneficio-card h3 {
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     font-size: 24px;
 
     margin-bottom: 18px;
 
 }
-
 
 .beneficio-card p {
 
@@ -1619,7 +1627,7 @@ TESTIMONIOS
 
     font-size: clamp(32px, 5vw, 48px);
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     margin-bottom: 20px;
 
@@ -1715,10 +1723,9 @@ TESTIMONIOS
 
 }
 
-
 .testimonio-card h3 {
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     font-size: 18px;
 
@@ -1739,7 +1746,7 @@ FAQ
 
     font-size: clamp(32px, 5vw, 48px);
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     margin-bottom: 70px;
 
@@ -1791,7 +1798,7 @@ FAQ
 
     background: var(--white);
 
-    color: var(--primary-blue);
+    color: var(--primary-green);
 
     font-size: 18px;
 
@@ -1873,48 +1880,161 @@ FAQ
 FOOTER
 =========================================*/
 
-.footer {
+.footer{
 
-    padding: 60px 8%;
+    background:#ffffff;
 
-    background: var(--primary-blue);
+    padding:35px 8% 18px;
 
-    color: var(--white);
-
-    text-align: center;
+    border-top:1px solid #e8e8e8;
 
 }
-.footer h3 {
 
-    font-size: 28px;
+.footer-content{
 
-    margin-bottom: 20px;
+    display:grid;
 
-    font-weight: 700;
+    grid-template-columns:1.5fr 1fr 1fr;
 
-}
-.footer p {
+    gap:55px;
 
-    max-width: 700px;
-
-    margin: 10px auto;
-
-    color: rgba(255,255,255,.85);
-
-    line-height: 1.7;
-
-    font-size: 16px;
+    align-items:start;
 
 }
-.footer p:last-child {
 
-    margin-top: 30px;
 
-    padding-top: 25px;
+.footer-brand{
 
-    border-top: 1px solid rgba(255,255,255,.2);
+    display:flex;
 
-    font-size: 14px;
+    flex-direction:column;
+
+}
+
+.footer-logo{
+
+    width:75px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-brand h3{
+
+    color:#111;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+    line-height:1.4;
+
+}
+
+.footer-brand p{
+
+    color:#555;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    max-width:360px;
+
+}
+
+.footer-column h4{
+
+    color:#111;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    color:#555;
+
+    text-decoration:none;
+
+    margin-bottom:14px;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:var(--primary-green);
+
+}
+
+.footer-column p{
+
+    color:#555;
+
+    margin-bottom:14px;
+
+    line-height:1.7;
+
+}
+
+.footer-bottom{
+
+    margin-top:25px;
+
+    padding-top:15px;
+
+    border-top:1px solid #e6e6e6;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+/*=========================================
+RESPONSIVE FOOTER
+=========================================*/
+
+@media(max-width:900px){
+
+.footer-content{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-brand{
+
+    align-items:center;
+
+}
+
+.footer-brand p{
+
+    max-width:100%;
+
+}
 
 }
 /*=========================================
@@ -1955,7 +2075,6 @@ WHATSAPP FLOAT BUTTON
 
 }
 
-
 .whatsapp-button:hover{
 
     transform:scale(1.1);
@@ -1967,17 +2086,13 @@ WHATSAPP FLOAT BUTTON
 RESPONSIVE
 =========================================*/
 
-
 @media(max-width:1100px){
 
-
     .hero {
-
 
         padding-top:140px;
 
     }
-
 
     .hero-text{
 
@@ -1987,7 +2102,6 @@ RESPONSIVE
 
      }
 
-
     .hero-text p {
 
         margin-left:auto;
@@ -1996,13 +2110,11 @@ RESPONSIVE
 
     }
 
-
     .hero-info {
 
         justify-content:center;
 
     }
-
 
    .contact-form{
 
@@ -2016,14 +2128,11 @@ RESPONSIVE
 
 }
 
-
-
     .servicios-grid {
 
         grid-template-columns:repeat(2,1fr);
 
     }
-
 
     .proceso-grid {
 
@@ -2031,13 +2140,11 @@ RESPONSIVE
 
     }
 
-
     .estadisticas {
 
         grid-template-columns:repeat(2,1fr);
 
     }
-
 
     .ventajas-grid {
 
@@ -2045,15 +2152,11 @@ RESPONSIVE
 
     }
 
-
 }
-
-
 
 /*=========================================
 TABLET
 =========================================*/
-
 
 @media(max-width:768px){
 
@@ -2063,13 +2166,11 @@ TABLET
 
 }
 
-
 .input-group{
 
     padding:0 14px;
 
 }
-
 
 .input-group input{
 
@@ -2091,7 +2192,6 @@ TABLET
 
     }
 
-
     .hero-navbar nav {
 
         gap:20px;
@@ -2101,7 +2201,6 @@ TABLET
         justify-content:center;
 
     }
-
 
     .hero-logo h2 {
 
@@ -2133,8 +2232,6 @@ TABLET
 }
     
 
-
-
     
 .hero-title{
 
@@ -2150,8 +2247,6 @@ TABLET
 
     }
 
-
-
     .rating-card,
     .money-card {
 
@@ -2161,15 +2256,11 @@ TABLET
 
     }
 
-
-
     .servicios-grid {
 
         grid-template-columns:1fr;
 
     }
-
-
 
     .proceso-grid {
 
@@ -2187,7 +2278,6 @@ TABLET
 
 }
 
-
 .phone-row select,
 .phone-row input{
 
@@ -2204,12 +2294,9 @@ TABLET
 
 }
 
-
-
     /*==============================
     PROCESO TIMELINE
     ==============================*/
-
 
     .proceso{
 
@@ -2217,13 +2304,11 @@ TABLET
 
     }
 
-
     .proceso-header h2{
 
         font-size:34px;
 
     }
-
 
     .proceso-header p{
 
@@ -2231,13 +2316,11 @@ TABLET
 
     }
 
-
     .timeline-item{
 
         gap:20px;
 
     }
-
 
    .timeline-circle{
 
@@ -2251,7 +2334,6 @@ TABLET
 
 }
 
-
     .timeline-line{
 
     height:100%;
@@ -2259,7 +2341,6 @@ TABLET
     min-height:150px;
 
 }
-
 
     .timeline-card{
 
@@ -2269,14 +2350,11 @@ TABLET
 
     }
 
-
     .timeline-card h3{
 
         font-size:21px;
 
     }
-
-
 
     .estadisticas {
 
@@ -2284,15 +2362,11 @@ TABLET
 
     }
 
-
-
     .ventajas-grid {
 
         grid-template-columns:1fr;
 
     }
-
-
 
     .beneficios-grid {
 
@@ -2300,15 +2374,11 @@ TABLET
 
     }
 
-
-
     .testimonios-grid {
 
         grid-template-columns:1fr;
 
     }
-
-
 
     .about-grid {
 
@@ -2316,14 +2386,11 @@ TABLET
 
     }
 
-
-
     .phone-row{
 
     width:100%;
 
 }
-
 
 .phone-row .form-control{
 
@@ -2333,15 +2400,11 @@ TABLET
 
 }
 
-
-
 /*=========================================
 MÓVIL PEQUEÑO
 =========================================*/
 
-
 @media(max-width:480px){
-
 
     .hero-logo {
 
@@ -2349,13 +2412,11 @@ MÓVIL PEQUEÑO
 
     }
 
-
     .hero-navbar nav a {
 
         font-size:15px;
 
     }
-
 
     .contact-form {
 
@@ -2363,13 +2424,11 @@ MÓVIL PEQUEÑO
 
     }
 
-
     .contact-form h2 {
 
         font-size:25px;
 
     }
-
 
     .servicio-card,
     .beneficio-card,
@@ -2381,7 +2440,6 @@ MÓVIL PEQUEÑO
 
     }
 
-
     .faq-question {
 
         font-size:15px;
@@ -2389,7 +2447,6 @@ MÓVIL PEQUEÑO
         padding:18px;
 
     }
-
 
     .footer {
 
@@ -2411,9 +2468,7 @@ MÓVIL PEQUEÑO
 
     flex-direction:column;
 
-
 }
-
 
 .hero-logo img{
 
@@ -2423,13 +2478,11 @@ MÓVIL PEQUEÑO
 
 }
 
-
 .hero-navbar nav{
 
     gap:20px;
 
 }
-
 
 .hero-navbar nav a{
 
@@ -2451,7 +2504,6 @@ MÓVIL PEQUEÑO
     transition:.3s ease;
 
 }
-
 
 .call-button:hover{
 
@@ -2476,4 +2528,35 @@ MÓVIL PEQUEÑO
     justify-content:center;
 
 }
+}
+.footer-brand-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-logo{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+.footer-brand h3{
+
+    margin:0;
+
+    line-height:1.35;
+
 }
