@@ -546,3 +546,44 @@ RESPONSIVE
     }
 
 }
+/* EVITAR ESTILOS GLOBALES EN PREGUNTAS */
+
+.faq-question button span{
+
+    background:transparent !important;
+
+    border:none !important;
+
+    border-radius:0 !important;
+
+    width:auto !important;
+
+    height:auto !important;
+
+    display:block !important;
+
+    padding:0 !important;
+
+    margin:0 !important;
+
+    color:#0B2340 !important;
+
+    text-decoration:none !important;
+
+}
+
+
+
+.faq-question button{
+
+    text-decoration:none !important;
+
+}
+
+
+
+.faq-question button:hover{
+
+    text-decoration:none !important;
+
+}
