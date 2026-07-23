@@ -52,17 +52,61 @@ function Navbar(){
                 </Link>
 
 
-                <Link to="/preguntas-frecuentes">
-                    Preguntas Frecuentes
-                </Link>
+
+
+
+                {/* RECURSOS */}
+
+                <div className="recursos-menu">
+
+
+                    <span className="recursos-titulo">
+
+                        Recursos ▾
+
+                    </span>
+
+
+
+                    <div className="submenu-recursos">
+
+
+                        <Link to="/preguntas-frecuentes">
+
+                            Preguntas Frecuentes
+
+                        </Link>
+
+
+
+                        <Link to="/lista-negra-brokers">
+
+                            Lista Negra de Brokers
+
+                        </Link>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
 
 
                 <Link to="/contacto">
+
                     Contacto
+
                 </Link>
 
 
+
             </nav>
+
+
 
 
 
@@ -73,7 +117,7 @@ function Navbar(){
 
 
                 <a 
-                    href="tel:+5210000000000"
+                    href="tel:+5663820152"
                     className="call-button"
                 >
 
@@ -83,6 +127,7 @@ function Navbar(){
 
 
             </div>
+
 
 
 

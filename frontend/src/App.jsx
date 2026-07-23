@@ -8,6 +8,7 @@ import Nosotros from "./pages/Nosotros";
 import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
 import PreguntasFrecuentes from "./pages/PreguntasFrecuentes";
+import ListaNegraBrokers from "./pages/ListaNegraBrokers";
 
 import FraudesBancarios from "./pages/servicios/FraudesBancarios";
 import FraudesDigitales from "./pages/servicios/FraudesDigitales";
@@ -82,6 +83,10 @@ function App() {
                     path="/servicios/estafas-piramidales"
                     element={<EstafasPiramidales />}
                 />
+                <Route 
+path="/lista-negra-brokers" 
+element={<ListaNegraBrokers />}
+/>
 <Route 
     path="/preguntas-frecuentes" 
     element={<PreguntasFrecuentes />} 

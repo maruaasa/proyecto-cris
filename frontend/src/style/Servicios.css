@@ -1,0 +1,1830 @@
+/* =====================================
+        SERVICIOS PAGE
+===================================== */
+
+
+:root{
+
+    --azul:#0B2340;
+
+    --verde:#126B3A;
+
+    --verde2:#3D8B7A;
+
+    --verde3:#6C9A8B;
+
+    --oliva:#789262;
+
+    --rosa:#D89AA8;
+
+    --profundo:#0B5740;
+
+    --gris:#666;
+
+    --gris-claro:#999;
+
+    --fondo:#F7F9F8;
+
+    --blanco:#fff;
+
+}
+
+
+
+
+.servicios-page{
+
+    width:100%;
+
+    overflow:hidden;
+
+    color:var(--azul);
+
+}
+
+
+
+
+.servicios-page a{
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+                HERO
+===================================== */
+
+
+.servicios-hero{
+
+    min-height:90vh;
+
+    padding: 220px 8% 80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+
+
+
+.servicios-hero-content{
+
+    max-width:900px;
+
+}
+
+
+
+
+
+.servicios-hero h1{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+
+
+.titulo-pequeno{
+
+    color:#111;
+
+    font-size:1.5rem;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+.titulo-principal{
+
+    color:var(--verde);
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    line-height:1.1;
+
+    font-weight:800;
+
+}
+
+
+
+
+
+.servicios-hero p{
+
+    max-width:750px;
+
+    margin:30px auto;
+
+    color:#555;
+
+    font-size:1.1rem;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+
+
+.hero-buttons button{
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    background:var(--verde);
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+.hero-buttons .outline-btn{
+
+    background:white;
+
+    color:var(--verde);
+
+    border:2px solid var(--verde);
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+          RECONOCIDOS
+===================================== */
+
+
+.reconocidos-section{
+
+    background:var(--fondo);
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+
+
+
+
+.reconocidos-section h2{
+
+    color:#777;
+
+    font-size:1.3rem;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+.reconocidos-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+
+}
+
+
+
+
+
+.reconocidos-grid div{
+
+    padding:20px;
+
+}
+
+
+
+
+
+.reconocidos-grid svg{
+
+    color:#888;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.reconocidos-grid span{
+
+    color:#888;
+
+    display:block;
+
+    font-size:.9rem;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+        AREAS DE PRACTICA
+===================================== */
+
+
+.areas-practica{
+
+    padding:100px 8%;
+
+}
+
+
+
+
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+
+
+
+.section-header h2{
+
+    font-size:2.5rem;
+
+    color:var(--azul);
+
+}
+
+
+
+
+
+.section-header p{
+
+    color:#666;
+
+}
+
+
+
+
+
+.areas-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+
+.area-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.07);
+
+    border-left:5px solid var(--verde);
+
+}
+
+
+
+
+
+.area-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.area-card p{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+.area-icon svg{
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.area-card a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    color:var(--verde);
+
+    font-weight:700;
+
+}
+
+
+
+
+
+/* COLORES ICONO + LINEA */
+
+
+
+
+.fraude-bancario{
+
+    border-color:var(--verde);
+
+}
+
+
+
+.fraude-bancario .area-icon svg{
+
+    color:var(--verde);
+
+}
+
+
+
+
+.fraude-digital{
+
+    border-color:var(--verde2);
+
+}
+
+
+
+.fraude-digital .area-icon svg{
+
+    color:var(--verde2);
+
+}
+
+
+
+
+.identidad{
+
+    border-color:var(--verde3);
+
+}
+
+
+
+.identidad .area-icon svg{
+
+    color:var(--verde3);
+
+}
+
+
+
+
+.forex{
+
+    border-color:var(--oliva);
+
+}
+
+
+
+.forex .area-icon svg{
+
+    color:var(--oliva);
+
+}
+
+
+
+
+.romanticas{
+
+    border-color:var(--rosa);
+
+}
+
+
+
+.romanticas .area-icon svg{
+
+    color:var(--rosa);
+
+}
+
+
+
+
+.piramidales{
+
+    border-color:var(--profundo);
+
+}
+
+
+
+.piramidales .area-icon svg{
+
+    color:var(--profundo);
+
+}
+/* =====================================
+     DETALLE DE SERVICIOS
+===================================== */
+
+
+.servicio-detalle{
+
+    padding:90px 8%;
+
+    display:grid;
+
+    grid-template-columns:1.15fr .85fr;
+
+    gap:45px;
+
+    align-items:start;
+
+}
+
+
+
+
+
+.detalle-left h2{
+
+    font-size:2.3rem;
+
+    color:var(--azul);
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+.detalle-card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:14px;
+
+    border-left:5px solid var(--verde);
+
+    box-shadow:0 8px 22px rgba(0,0,0,.07);
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+.detalle-card svg{
+
+    font-size:30px;
+
+    color:var(--verde);
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.detalle-card h3{
+
+    color:var(--azul);
+
+    margin-bottom:12px;
+
+}
+
+
+
+
+
+.detalle-card p,
+.detalle-card li{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+.detalle-card ul{
+
+    padding-left:20px;
+
+}
+
+
+
+
+
+
+
+/* TARJETAS DERECHA */
+
+
+.detalle-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+
+
+.caso-card{
+
+    background:#F7F9F8;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+
+
+
+
+.caso-card svg{
+
+    color:var(--verde);
+
+    font-size:30px;
+
+}
+
+
+
+
+
+.caso-card h3{
+
+    color:var(--azul);
+
+}
+
+
+
+
+
+.caso-card strong{
+
+    display:block;
+
+    color:var(--verde);
+
+    font-size:1.4rem;
+
+    margin:15px 0;
+
+}
+
+
+
+
+
+.mini-card{
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:15px;
+
+    border:1px solid #eee;
+
+}
+
+
+
+
+
+.mini-card svg{
+
+    color:var(--verde);
+
+    font-size:28px;
+
+}
+
+
+
+
+
+.mini-card p{
+
+    color:#666;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+       OTRAS AREAS
+===================================== */
+
+
+.otras-especialidades{
+
+    padding:100px 8%;
+
+}
+
+
+
+
+
+.especialidades-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+
+.especialidad-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.07);
+
+    border-top:5px solid var(--verde);
+
+}
+
+
+
+
+
+.especialidad-card svg{
+
+    color:var(--verde);
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.especialidad-card h3{
+
+    color:var(--azul);
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.especialidad-card p{
+
+    color:#666;
+
+}
+
+
+
+
+
+.especialidad-card a{
+
+    color:var(--verde);
+
+    font-weight:700;
+
+    display:inline-block;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+
+/* ROMANTICAS */
+
+
+.especialidad-card.romantica{
+
+    border-color:var(--rosa);
+
+}
+
+
+
+.especialidad-card.romantica svg{
+
+    color:var(--rosa);
+
+}
+
+
+
+
+
+
+
+/* BANCARIO GRANDE */
+
+
+.especialidad-card.bancaria-grande{
+
+    grid-column:1 / 3;
+
+    border-color:var(--verde2);
+
+}
+
+
+
+
+
+.bancaria-grande svg{
+
+    color:var(--verde2);
+
+}
+
+
+
+
+
+.cargo-box{
+
+    margin-top:25px;
+
+    background:#D9EFE1;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    border-left:4px solid var(--verde);
+
+}
+
+
+
+
+
+.cargo-box h4{
+
+    color:var(--verde);
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+       COMO LUCHAMOS POR TI
+===================================== */
+
+
+.como-luchamos{
+
+    background:#F7F9F8;
+
+    padding:100px 8%;
+
+}
+
+
+
+
+
+.proceso-linea{
+
+    max-width:850px;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+
+
+
+
+.proceso-linea:before{
+
+    content:"";
+
+    position:absolute;
+
+    left:25px;
+
+    top:0;
+
+    height:100%;
+
+    width:2px;
+
+    background:var(--verde);
+
+}
+
+
+
+
+
+.paso-proceso{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+    position:relative;
+
+}
+
+
+
+
+
+.paso-proceso span{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:var(--verde);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:22px;
+
+    z-index:2;
+
+}
+
+
+
+
+
+.paso-proceso h3{
+
+    color:var(--azul);
+
+}
+
+
+
+
+
+.paso-proceso p{
+
+    color:#666;
+
+}
+
+
+
+
+
+
+
+
+/* GARANTIA */
+
+
+.garantia-box{
+
+    max-width:900px;
+
+    margin:50px auto 0;
+
+    background:#D9EFE1;
+
+    padding:25px 35px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+
+
+
+
+.garantia-icon svg{
+
+    color:var(--verde);
+
+    font-size:45px;
+
+}
+
+
+
+
+
+.garantia-box h3{
+
+    color:var(--verde);
+
+}
+
+
+
+
+
+.garantia-box a{
+
+    background:var(--verde);
+
+    color:white;
+
+    padding:14px 25px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+}
+/* =====================================
+             TESTIMONIOS
+===================================== */
+
+
+.testimonios-servicios{
+
+    padding:100px 8%;
+
+}
+
+
+
+
+
+.estadisticas-testimonios{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+.estadisticas-testimonios strong{
+
+    color:var(--verde);
+
+    font-size:1.1rem;
+
+}
+
+
+
+
+
+.testimonios-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+
+
+.testimonio-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+
+
+
+
+.stars{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:6px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.stars svg{
+
+    color:#D9A441;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+.testimonio-card p{
+
+    color:#555;
+
+    line-height:1.6;
+
+    font-style:italic;
+
+}
+
+
+
+
+
+.testimonio-card strong{
+
+    display:block;
+
+    color:var(--azul);
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+            FORMULARIO
+===================================== */
+
+
+.formulario-servicios{
+
+    padding:100px 8%;
+
+    background:#F7F9F8;
+
+}
+
+
+
+
+
+.formulario-container{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+
+
+.formulario-info{
+
+    background:#0B5740;
+
+    color:white;
+
+    padding:50px;
+
+}
+
+
+
+
+
+.formulario-info h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.formulario-info p{
+
+    line-height:1.7;
+
+    color:#e6e6e6;
+
+}
+
+
+
+
+
+.info-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+
+
+
+
+.info-item svg{
+
+    font-size:28px;
+
+    color:#9ED6B5;
+
+}
+
+
+
+
+
+
+
+
+.formulario-box{
+
+    background:white;
+
+    padding:50px;
+
+}
+
+
+
+
+
+.formulario-box form{
+
+    width:100%;
+
+}
+
+
+
+
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+
+
+
+
+.formulario-box input,
+.formulario-box select,
+.formulario-box textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    margin-bottom:20px;
+
+    font-size:1rem;
+
+}
+
+
+
+
+.formulario-box textarea{
+
+    height:130px;
+
+    resize:none;
+
+}
+
+
+
+
+
+.formulario-box button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    background:var(--verde);
+
+    color:white;
+
+    border-radius:8px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.seguridad{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+
+
+
+
+.seguridad svg{
+
+    color:#999;
+
+    font-size:22px;
+
+}
+
+
+
+
+
+.seguridad p{
+
+    color:#888;
+
+    font-size:.9rem;
+
+    text-align:center;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+              FAQ
+===================================== */
+
+
+.faq-servicios{
+
+    padding:100px 8%;
+
+}
+
+
+
+
+
+.faq-list{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+.faq-item{
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+
+
+/* =====================================
+             FAQ ACORDEON
+===================================== */
+
+
+.faq-servicios{
+
+    padding:100px 8%;
+
+}
+
+
+
+.faq-list{
+
+    max-width:850px;
+
+    margin:0 auto;
+
+}
+
+
+
+.faq-item{
+
+    margin-bottom:15px;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    background:white;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.06);
+
+}
+
+
+
+.faq-item button{
+
+    width:100%;
+
+    min-height:70px;
+
+    padding:20px 25px;
+
+    background:white;
+
+    border:none;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    color:#0B2340;
+
+    font-size:1.05rem;
+
+    font-weight:700;
+
+}
+
+
+
+.faq-item button:hover{
+
+    color:#126B3A;
+
+}
+
+
+
+.faq-item button span{
+
+    color:#126B3A;
+
+    font-size:28px;
+
+    font-weight:400;
+
+}
+
+
+
+.faq-item p{
+
+    margin:0;
+
+    padding:20px 25px;
+
+    background:#F7F9F8;
+
+    color:#666;
+
+    line-height:1.7;
+
+    border-top:1px solid #eee;
+
+}
+
+
+/* =====================================
+             WHATSAPP
+===================================== */
+
+
+.whatsapp-button{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#126B3A;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    z-index:1000;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+             RESPONSIVE
+===================================== */
+
+
+@media(max-width:1000px){
+
+
+
+.servicios-hero{
+
+    padding-top:100px;
+
+}
+
+
+
+.areas-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.servicio-detalle{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.testimonios-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.formulario-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+
+
+.areas-grid,
+.especialidades-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.bancaria-grande{
+
+    grid-column:auto!important;
+
+}
+
+
+
+.form-row{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.formulario-info,
+.formulario-box{
+
+    padding:30px;
+
+}
+
+
+
+.estadisticas-testimonios{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.garantia-box{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.telefono-input{
+
+    flex-direction:column;
+
+}
+
+
+
+.telefono-input select{
+
+    width:100%;
+
+}
+
+
+
+}
